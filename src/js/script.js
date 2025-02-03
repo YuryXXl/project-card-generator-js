@@ -1,20 +1,20 @@
 // Add your code here
 
-const suits = ["♥️", "♦️", "♠", "♣"];
+const suits = [`♥️`, `♦️`, `♠`, `♣`];
 const values = [
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "J",
-  "Q",
-  "K",
-  "A",
+  `2`,
+  `3`,
+  `4`,
+  `5`,
+  `6`,
+  `7`,
+  `8`,
+  `9`,
+  `10`,
+  `J`,
+  `Q`,
+  `K`,
+  `A`,
 ];
 
 function randomIndex(array) {
@@ -34,4 +34,13 @@ value2Element.textContent === value1Element.textContent
 if (suitElement.textContent === "♥️" || suitElement.textContent === "♦️") {
   value1Element.style.color = "red";
   value2Element.style.color = "red";
+}
+
+if (
+  value1Element.textContent === "A" ||
+  value1Element.textContent === "K" ||
+  value1Element.textContent === "Q" ||
+  value1Element.textContent === "J"
+) {
+  suitElement.style.backgroundColor = "lightgray";
 }
